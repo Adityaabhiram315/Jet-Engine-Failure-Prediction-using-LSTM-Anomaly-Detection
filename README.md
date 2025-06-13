@@ -1,6 +1,6 @@
 
 
-# 🛠️ Jet Engine Failure Prediction using LSTM & Anomaly Detection
+# 🛠️ LSTM-Powered Predictive Maintenance for Jet Engines
 
 A predictive maintenance system for jet engine components using **LSTM networks** and **unsupervised anomaly detection**, built on multivariate sensor telemetry data. Designed to forecast failures, reduce downtime, and enable proactive decision-making in aviation maintenance.
 
