@@ -4,6 +4,7 @@
 
 A predictive maintenance system using deep learning and anomaly detection to forecast jet engine failures in advance. Enhances safety, reduces downtime, and supports proactive maintenance.
 
+Note: This project was completed earlier as part of academic research and has now been refined and deployed to GitHub for public reference and demonstration.
 ---
 
 ## 🎯 Objective
