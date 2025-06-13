@@ -11,7 +11,16 @@ A predictive maintenance system using deep learning and anomaly detection to for
 Predict the **Remaining Useful Life (RUL)** of aircraft engines using **LSTM networks** trained on sensor telemetry data (temperature, pressure, vibration), combined with **unsupervised anomaly detection**.
 
 ---
+## 🌐 APIs Used (via [Aviation Edge](https://aviation-edge.com/))
 
+| API                          | Purpose                                                                  |
+| ---------------------------- | ------------------------------------------------------------------------ |
+| **Airline Routes API**       | Built flight network graph for route simulation.                         |
+| **Real-Time Schedules API**  | Dynamic edge weighting using live flight data.                           |
+| **Historical Schedules API** | Validated optimizations, showing \~**7% average travel time reduction**. |
+
+
+---
 ## 🔑 Key Features
 
 | Feature                    | Summary                                                                                         |
@@ -21,15 +30,6 @@ Predict the **Remaining Useful Life (RUL)** of aircraft engines using **LSTM net
 | **Edge-Ready ML Pipeline** | Deployed via **Docker** and tracked with **MLflow** for scalable integration.                   |
 | **Feature Engineering**    | Applied signal smoothing, normalization, and transformations for model efficiency.              |
 
----
-
-## 🌐 APIs Used (via [Aviation Edge](https://aviation-edge.com/))
-
-| API                          | Purpose                                                                  |
-| ---------------------------- | ------------------------------------------------------------------------ |
-| **Airline Routes API**       | Built flight network graph for route simulation.                         |
-| **Real-Time Schedules API**  | Dynamic edge weighting using live flight data.                           |
-| **Historical Schedules API** | Validated optimizations, showing \~**7% average travel time reduction**. |
 
 ---
 
