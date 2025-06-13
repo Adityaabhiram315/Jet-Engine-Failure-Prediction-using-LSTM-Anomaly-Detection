@@ -11,15 +11,6 @@ Note: This project was completed earlier as part of academic research and has no
 
 Predict the **Remaining Useful Life (RUL)** of aircraft engines using **LSTM networks** trained on sensor telemetry data (temperature, pressure, vibration), combined with **unsupervised anomaly detection**.
 
----
-## 🌐 APIs Used (via [Aviation Edge](https://aviation-edge.com/))
-
-| API                          | Purpose                                                                  |
-| ---------------------------- | ------------------------------------------------------------------------ |
-| **Airline Routes API**       | Built flight network graph for route simulation.                         |
-| **Real-Time Schedules API**  | Dynamic edge weighting using live flight data.                           |
-| **Historical Schedules API** | Validated optimizations, showing \~**7% average travel time reduction**. |
-
 
 ---
 ## 🔑 Key Features
@@ -51,16 +42,6 @@ Predict the **Remaining Useful Life (RUL)** of aircraft engines using **LSTM net
 * Triggered real-time alerts via anomaly detection.
 * Achieved **\~7% improvement** in travel time using historical validation.
 * Packaged as a **deployable pipeline** ready for edge/cloud inference.
-
----
-
-## 📦 System Flow
-
-```plaintext
-Sensor Data → Preprocessing → LSTM Model + Anomaly Detection
-       ↓
-     Prediction + Alerts → MLflow Tracking + Dockerized Deployment
-```
 
 ---
 
