@@ -1,55 +1,66 @@
-# Jet-Engine-Failure-Prediction-using-LSTM-Anomaly-Detection
 
-This project implements a predictive maintenance system for jet engine components using LSTM-based deep learning and sensor telemetry. The goal is to predict failures and detect anomalies ahead of time, improving aviation safety, operational uptime, and maintenance efficiency.
 
-🔑 APIs Used in the Project (FROM AVIATION EDGE $ 7 USD / month)
-1.) Airline Routes API
+# Jet Engine Failure Prediction using LSTM & Anomaly Detection
 
--Used to build the real-world flight network graph.
+A predictive maintenance system using deep learning and anomaly detection to forecast jet engine failures in advance. Enhances safety, reduces downtime, and supports proactive maintenance.
 
--Provided direct and indirect routes between global airport pairs.
+---
 
--Enabled accurate edge creation in graph algorithms (Dijkstra, Floyd-Warshall).
+## 🎯 Objective
 
-2.)Real-time Schedules API
+Predict the **Remaining Useful Life (RUL)** of aircraft engines using **LSTM networks** trained on sensor telemetry data (temperature, pressure, vibration), combined with **unsupervised anomaly detection**.
 
--Fetched current flight timings and frequencies to simulate real-time routing.
+---
 
--Helped dynamically update edge weights (travel time, delays) in the graph.
+## 🔑 Key Features
 
--Made the simulation closer to a live operational scenario.
+| Feature                    | Summary                                                                                         |
+| -------------------------- | ----------------------------------------------------------------------------------------------- |
+| **LSTM Forecasting**       | Achieved **92% precision** in failure prediction, over **24+ hours in advance**.                |
+| **Anomaly Detection**      | Used **Isolation Forest** and **Autoencoders** to identify sensor anomalies and trigger alerts. |
+| **Edge-Ready ML Pipeline** | Deployed via **Docker** and tracked with **MLflow** for scalable integration.                   |
+| **Feature Engineering**    | Applied signal smoothing, normalization, and transformations for model efficiency.              |
 
-3.)Historical Schedules API
+---
 
--Used to validate algorithmic results by comparing optimized paths with real historical flight durations and paths.
+## 🌐 APIs Used (via [Aviation Edge](https://aviation-edge.com/))
 
-Helped estimate actual time reduction (~7%).
+| API                          | Purpose                                                                  |
+| ---------------------------- | ------------------------------------------------------------------------ |
+| **Airline Routes API**       | Built flight network graph for route simulation.                         |
+| **Real-Time Schedules API**  | Dynamic edge weighting using live flight data.                           |
+| **Historical Schedules API** | Validated optimizations, showing \~**7% average travel time reduction**. |
 
-🎯 Objective
-To forecast the Remaining Useful Life (RUL) of aircraft engines by analyzing time-series sensor data (temperature, pressure, vibration) using Long Short-Term Memory (LSTM) networks, supported by unsupervised anomaly detection models for real-time health monitoring.
+---
 
-💡 Key Features
-LSTM-based Time Series Prediction: Trained deep recurrent neural networks to predict jet engine component degradation, achieving 92% precision in forecasting failures 24+ hours in advance.
+## 🛠 Tech Stack
 
-Anomaly Detection Models: Integrated Isolation Forest and Autoencoder-based models to detect early deviations in sensor patterns and alert maintenance teams.
+| Category             | Tools Used                      |
+| -------------------- | ------------------------------- |
+| **Languages**        | Python, NumPy, Pandas           |
+| **ML/DL Frameworks** | TensorFlow, Keras, Scikit-learn |
+| **Deployment**       | Docker, MLflow                  |
+| **Visualization**    | Matplotlib, Seaborn             |
 
-Feature Engineering & Optimization: Applied statistical analysis and signal smoothing techniques to clean raw sensor inputs for enhanced model performance.
+---
 
-Edge-Deployable ML Pipeline: Developed and deployed the ML pipeline using MLflow, Docker, and Streamlit, simulating an on-prem or edge deployment use case.
+## 📈 Outcomes
 
-Live Dashboard: Built an interactive dashboard to visualize engine health metrics, model predictions, and alerts for operational decision-making.
+* Predicted component failures with **92% precision** using LSTM models.
+* Triggered real-time alerts via anomaly detection.
+* Achieved **\~7% improvement** in travel time using historical validation.
+* Packaged as a **deployable pipeline** ready for edge/cloud inference.
 
-📦 Tech Stack
-Python, Pandas, NumPy, Matplotlib, Seaborn
+---
 
-TensorFlow/Keras for LSTM modeling
+## 📦 System Flow
 
-Scikit-learn for anomaly detection
+```plaintext
+Sensor Data → Preprocessing → LSTM Model + Anomaly Detection
+       ↓
+     Prediction + Alerts → MLflow Tracking + Dockerized Deployment
+```
 
-Streamlit for visualization
+---
 
-MLflow + Docker for deployment
-
-📊 Outcome
-This project replicates real-world aircraft predictive maintenance pipelines and demonstrates how deep learning and anomaly detection can enable proactive maintenance. Achieved measurable improvements in failure prediction precision and alert response latency, with real-time inference capabilities and scalable deployment.
 
